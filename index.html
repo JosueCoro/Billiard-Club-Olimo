@@ -28,7 +28,7 @@
             </div>
             
             <div class="flex items-center space-x-4">
-                <button class="bg-indigo-700 text-white px-4 py-2 rounded-full hover:bg-indigo-800 transition-colors shadow-lg hidden md:block">
+                <button  id="reserveBtnHeader" type="button" class="bg-indigo-700 text-white px-4 py-2 rounded-full hover:bg-indigo-800 transition-colors shadow-lg hidden md:block">
                     <i class="fas fa-phone-alt mr-2"></i> Reservar
                 </button>
                 
@@ -46,9 +46,9 @@
                 <a href="#mesas" class="text-gray-800 hover:text-indigo-700 font-medium py-2">Nuestras Mesas</a>
                 <a href="#galeria" class="text-gray-800 hover:text-indigo-700 font-medium py-2">Galería</a>
                 <a href="#contacto" class="text-gray-800 hover:text-indigo-700 font-medium py-2">Contacto</a>
-                <button class="bg-indigo-700 text-white px-4 py-2 rounded-full hover:bg-indigo-800 transition-colors w-full mt-2">
-                    <i class="fas fa-phone-alt mr-2"></i> Reservar
-                </button>
+                <button  id="reservarBtnMobile" type="button" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Reservar</button>
+
+                
             </div>
         </div>
     </header>
@@ -60,10 +60,10 @@
             <h2 class="text-3xl md:text-4xl font-semibold mb-8">El billar premium donde los dioses juegan</h2>
             
             <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
-                <button class="bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-bold px-8 py-4 rounded-full text-lg md:text-xl transition-all transform hover:scale-105 shadow-lg">
+                <button  id="reserveBtnHero" type="button" class="bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-bold px-8 py-4 rounded-full text-lg md:text-xl transition-all transform hover:scale-105 shadow-lg">
                     <i class="fas fa-calendar-alt mr-2"></i> Reservar Mesa
                 </button>
-                <button class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-900 text-white font-bold px-8 py-4 rounded-full text-lg md:text-xl transition-all transform hover:scale-105">
+                <button onclick="window.open('https://www.google.com/maps/search/Your+Address+Here', '_blank')" class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-900 text-white font-bold px-8 py-4 rounded-full text-lg md:text-xl transition-all transform hover:scale-105">
                     <i class="fas fa-map-marker-alt mr-2"></i> Cómo Llegar
                 </button>
             </div>
@@ -128,7 +128,7 @@
                 <!-- Table 1 -->
                 <div class="pool-table-card bg-white rounded-xl overflow-hidden shadow-lg">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1601042879369-261840d39e78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                        <img src="imagenes/mesa1.jpg" 
                              alt="Mesa de billar profesional" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
@@ -152,8 +152,8 @@
                             </li>
                         </ul>
                         <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-indigo-800">$25/h</span>
-                            <button class="bg-indigo-700 text-white px-4 py-2 rounded-full hover:bg-indigo-800 transition-colors">
+                            <span class="text-2xl font-bold text-indigo-800">Bs.25/h</span>
+                            <button type="button" class="bg-indigo-700 text-white px-4 py-2 rounded-full hover:bg-indigo-800 transition-colors">
                                 Reservar
                             </button>
                         </div>
@@ -163,7 +163,7 @@
                 <!-- Table 2 -->
                 <div class="pool-table-card bg-white rounded-xl overflow-hidden shadow-lg">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1601042879369-261840d39e78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                        <img src="Imagenes/mesa2.jpg" 
                              alt="Mesa de billar premium" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
@@ -187,7 +187,7 @@
                             </li>
                         </ul>
                         <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-indigo-800">$20/h</span>
+                            <span class="text-2xl font-bold text-indigo-800">Bs. 20/h</span>
                             <button class="bg-indigo-700 text-white px-4 py-2 rounded-full hover:bg-indigo-800 transition-colors">
                                 Reservar
                             </button>
@@ -198,7 +198,7 @@
                 <!-- Table 3 -->
                 <div class="pool-table-card bg-white rounded-xl overflow-hidden shadow-lg">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1601042879369-261840d39e78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                        <img src="Imagenes/mesa3.jpg" 
                              alt="Mesa de billar clásica" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
@@ -222,8 +222,8 @@
                             </li>
                         </ul>
                         <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-indigo-800">$15/h</span>
-                            <button class="bg-indigo-700 text-white px-4 py-2 rounded-full hover:bg-indigo-800 transition-colors">
+                            <span class="text-2xl font-bold text-indigo-800">Bs. 15/h</span>
+                            <button type="button" class="bg-indigo-700 text-white px-4 py-2 rounded-full hover:bg-indigo-800 transition-colors">
                                 Reservar
                             </button>
                         </div>
@@ -240,7 +240,7 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
-                    <img src="https://images.unsplash.com/photo-1601042879369-261840d39e78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                    <img src="Imagenes/fondo2.jpg" 
                          alt="Club Olimpo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <i class="fas fa-search-plus text-white text-3xl"></i>
@@ -248,7 +248,7 @@
                 </div>
                 
                 <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
-                    <img src="https://images.unsplash.com/photo-1601042879369-261840d39e78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                    <img src="Imagenes/fondologo.jpg" 
                          alt="Club Olimpo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <i class="fas fa-search-plus text-white text-3xl"></i>
@@ -256,7 +256,7 @@
                 </div>
                 
                 <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
-                    <img src="https://images.unsplash.com/photo-1601042879369-261840d39e78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                    <img src="Imagenes/fondo3.jpg" 
                          alt="Club Olimpo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <i class="fas fa-search-plus text-white text-3xl"></i>
@@ -264,7 +264,7 @@
                 </div>
                 
                 <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
-                    <img src="https://images.unsplash.com/photo-1601042879369-261840d39e78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                    <img src="Imagenes/mesa1.jpg" 
                          alt="Club Olimpo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <i class="fas fa-search-plus text-white text-3xl"></i>
@@ -272,7 +272,7 @@
                 </div>
                 
                 <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
-                    <img src="https://images.unsplash.com/photo-1601042879369-261840d39e78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                    <img src="Imagenes/mesa2.jpg" 
                          alt="Club Olimpo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <i class="fas fa-search-plus text-white text-3xl"></i>
@@ -280,7 +280,7 @@
                 </div>
                 
                 <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
-                    <img src="https://images.unsplash.com/photo-1601042879369-261840d39e78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                    <img src="Imagenes/mesa3.jpg" 
                          alt="Club Olimpo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <i class="fas fa-search-plus text-white text-3xl"></i>
@@ -307,7 +307,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-800">Dirección</h4>
-                                <p class="text-gray-600">Av. Olimpo 1234, Col. Deportiva, Ciudad</p>
+                                <p class="text-gray-600">Doble via la Guardia KM20, bajando 4 cuadra velko, Santa Cruz de la Sierra, Bolivia</p>
                             </div>
                         </div>
                         
@@ -317,7 +317,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-800">Teléfono</h4>
-                                <p class="text-gray-600">+52 55 1234 5678</p>
+                                <p class="text-gray-600">+591 69110022</p>
                             </div>
                         </div>
                         
@@ -327,7 +327,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-800">Email</h4>
-                                <p class="text-gray-600">info@clubolimpo.com</p>
+                                <p class="text-gray-600">billiardclubolimpo@gmail.com</p>
                             </div>
                         </div>
                         
@@ -362,23 +362,38 @@
                 </div>
                 
                 <div>
-                    <h3 class="text-2xl font-bold mb-6 text-indigo-800">Envíanos un Mensaje</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-indigo-800">Solicitud de Reserva</h3>
                     
-                    <form class="space-y-4">
+                    <form id="formReserva" class="space-y-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
                                 <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
                                 <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                             </div>
                             <div>
-                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <label for="number" class="block text-gray-700 font-medium mb-2">Cantidad de personas</label>
+                                <input type="number" id="number" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="fecha" class="block text-gray-700 font-medium mb-2">Fecha de Reserva</label>
+                                <input type="date" id="fecha" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+                            <div>
+                                <label for="horario" class="block text-gray-700 font-medium mb-2">Horario de Reserva</label>
+                                <input type="time" id="horario" min="16:00" max="23:59" value="16:00" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Ej: 19:00">
+                                <span class="text-xs text-gray-500">Horario disponible: 4:00 PM a 12:00 AM</span>
                             </div>
                         </div>
                         
                         <div>
-                            <label for="subject" class="block text-gray-700 font-medium mb-2">Asunto</label>
-                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Seleccionar Mesa</label>
+                            <select id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <option value="pro">Olympic Pro - Bs. 25/h</option>
+                                <option value="elite">Olympic Elite - Bs. 20/h</option>
+                                <option value="classic">Olympic Classic - Bs. 15/h</option>
+                            </select>
                         </div>
                         
                         <div>
@@ -387,13 +402,34 @@
                         </div>
                         
                         <button type="submit" class="bg-indigo-700 text-white px-6 py-3 rounded-lg hover:bg-indigo-800 transition-colors w-full md:w-auto">
-                            Enviar Mensaje
+                            Solicitar Reserva
                         </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <div id="reservationModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl p-8 w-full max-w-md mx-auto relative transform transition-all sm:my-8 sm:w-full">
+            <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl font-bold">
+                &times;
+            </button>
+
+            <h3 class="text-3xl font-bold text-indigo-800 mb-6 text-center">¡Reserva tu Mesa en Olimpo!</h3>
+            <p class="text-gray-700 text-lg mb-8 text-center">
+                Para una experiencia premium, todas las reservas se gestionan a través de nuestro equipo. Por favor, contáctanos por WhatsApp o llena el formulario en la sección de contacto.
+            </p>
+
+            <div class="flex flex-col space-y-4">
+                <a href="https://wa.me/59169110022?text=Hola,%20quiero%20hacer%20una%20reserva." target="_blank" class="bg-green-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center shadow-md">
+                    <i class="fab fa-whatsapp text-xl mr-3"></i> Contactar por WhatsApp
+                </a>
+                <a href="#contacto" id="goToContactBtn" class="bg-indigo-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-800 transition-colors flex items-center justify-center shadow-md">
+                    <i class="fas fa-file-alt text-xl mr-3"></i> Ir a Formulario de Reserva
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Map Section -->
     <div class="h-96 w-full">
@@ -446,176 +482,23 @@
         </div>
     </footer>
 
-    <!-- Reservation Modal -->
-    <div id="reservationModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
-        <div class="bg-white rounded-xl p-8 max-w-md w-full mx-4 relative">
-            <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
-                <i class="fas fa-times text-2xl"></i>
-            </button>
-            
-            <h3 class="text-2xl font-bold mb-6 text-indigo-800">Reserva tu Mesa</h3>
-            
-            <form class="space-y-4">
-                <div>
-                    <label for="reservationName" class="block text-gray-700 font-medium mb-2">Nombre</label>
-                    <input type="text" id="reservationName" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                </div>
-                
-                <div>
-                    <label for="reservationPhone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
-                    <input type="tel" id="reservationPhone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                </div>
-                
-                <div>
-                    <label for="reservationDate" class="block text-gray-700 font-medium mb-2">Fecha</label>
-                    <input type="date" id="reservationDate" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                </div>
-                
-                <div>
-                    <label for="reservationTime" class="block text-gray-700 font-medium mb-2">Hora</label>
-                    <input type="time" id="reservationTime" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                </div>
-                
-                <div>
-                    <label for="reservationTable" class="block text-gray-700 font-medium mb-2">Tipo de Mesa</label>
-                    <select id="reservationTable" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                        <option value="pro">Olympic Pro - $25/h</option>
-                        <option value="elite">Olympic Elite - $20/h</option>
-                        <option value="classic">Olympic Classic - $15/h</option>
-                    </select>
-                </div>
-                
-                <div>
-                    <label for="reservationHours" class="block text-gray-700 font-medium mb-2">Horas</label>
-                    <input type="number" id="reservationHours" min="1" max="4" value="1" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                </div>
-                
-                <button type="submit" class="bg-indigo-700 text-white px-6 py-3 rounded-lg hover:bg-indigo-800 transition-colors w-full">
-                    Confirmar Reservación
-                </button>
-            </form>
-        </div>
-    </div>
+    
+
 
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        document.addEventListener("DOMContentLoaded", function () {
+            const fechaInput = document.getElementById("fecha");
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0'); // Mes empieza en 0
+            const dd = String(today.getDate()).padStart(2, '0');
+    
+            fechaInput.value = `${yyyy}-${mm}-${dd}`;
         });
-        
-        // Smooth Scrolling for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
-            });
-        });
-        
-        // Reservation Modal
-        const reservationModal = document.getElementById('reservationModal');
-        const closeModal = document.getElementById('closeModal');
-        const reserveButtons = document.querySelectorAll('button:contains("Reservar")');
-        
-        // Show modal when any reserve button is clicked
-        reserveButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                reservationModal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-        
-        // Close modal
-        closeModal.addEventListener('click', () => {
-            reservationModal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        });
-        
-        // Close modal when clicking outside
-        reservationModal.addEventListener('click', (e) => {
-            if (e.target === reservationModal) {
-                reservationModal.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-            }
-        });
-        
-        // Form submission
-        const reservationForm = document.querySelector('#reservationModal form');
-        if (reservationForm) {
-            reservationForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                // Here you would typically send the data to a server
-                alert('Reservación enviada. Nos pondremos en contacto contigo para confirmar.');
-                reservationModal.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-                reservationForm.reset();
-            });
-        }
-        
-        // Contact form submission
-        const contactForm = document.querySelector('#contacto form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Mensaje enviado. Gracias por contactarnos.');
-                contactForm.reset();
-            });
-        }
-        
-        // Subscription form submission
-        const subscribeForm = document.querySelector('footer form');
-        if (subscribeForm) {
-            subscribeForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const emailInput = subscribeForm.querySelector('input[type="email"]');
-                alert(`Gracias por suscribirte con ${emailInput.value}. Te enviaremos nuestras promociones.`);
-                emailInput.value = '';
-            });
-        }
-        
-        // Add animation on scroll
-        const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.pool-table-card, .table-feature');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.3;
-                
-                if (elementPosition < screenPosition) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        };
-        
-        // Set initial state for animation
-        document.querySelectorAll('.pool-table-card, .table-feature').forEach(element => {
-            element.style.opacity = '0';
-            element.style.transform = 'translateY(20px)';
-            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        });
-        
-        // Run animation check on scroll and load
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
     </script>
+    
+
+    <script src="main.js"></script>
 </body>
 </html>
 
